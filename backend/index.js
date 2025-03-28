@@ -14,6 +14,9 @@ const cleaningServiceRoutes = require("./routes/cleaningServiceRoutes");
 app.use("/api/cleaning-services", cleaningServiceRoutes);
 const userRoutes = require("./routes/userRoutes");
 app.use("/api/users", userRoutes);
+const bookingRoutes = require("./routes/bookingRoutes");
+app.use("/api/bookings", bookingRoutes);
+
 
 // Connect to MongoDB
 mongoose
