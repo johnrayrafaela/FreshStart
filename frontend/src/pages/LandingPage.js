@@ -5,7 +5,7 @@ const LandingPage = () => {
 
   return (
     <div className="landing-container">
-      <h1>Welcome to Fresh Start A Cleaning Services</h1>
+      <h1>Welcome to Fresh Start A Cleaning Services Website</h1>
       <p>Book professional cleaning services at your convenience.</p>
       <button className="get-started-btn" onClick={() => navigate("/login")}>
         Get Started
