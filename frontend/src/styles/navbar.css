@@ -1,0 +1,101 @@
+/* Navbar container */
+.navbar {
+    padding: 20px;
+    position: fixed;
+    height: 50px;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #007bff; /* Blue Background */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo-img {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+  }
+  .logo-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+  }
+  
+  
+  
+  
+  /* Navigation links */
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: end;
+    gap: 20px;
+  }
+  
+  .link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .link:hover {
+    color: #4e4e4e; /* Yellow Hover Effect */
+  }
+  
+  /* Auth section */
+  .auth-section {
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Username display */
+  .username {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  /* Buttons */
+  .button {
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: white;
+    color: #007bff; /* Blue Text on Hover */
+  }
+  
+  /* Logout button */
+  .logout-btn {
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .logout-btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  
+  
+  
