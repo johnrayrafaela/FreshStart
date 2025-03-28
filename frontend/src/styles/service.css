@@ -54,3 +54,90 @@
       grid-template-columns: repeat(1, minmax(250px, 1fr)); /* One column for smaller screens */
   }
 }
+.booking-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.booking-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px; /* Adjust size */
+  max-height: 80vh; /* Ensures it doesn't overflow */
+  overflow-y: auto; /* Enables scrolling when content overflows */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Add smooth scrolling inside the form */
+.booking-form::-webkit-scrollbar {
+  width: 6px;
+}
+
+.booking-form::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.booking-form::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.booking-form h3 {
+  text-align: center;
+}
+
+/* Labels & Inputs */
+.booking-form label {
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Buttons */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.form-buttons button {
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.form-buttons button[type="submit"] {
+  background: #28a745;
+  color: white;
+}
+
+.form-buttons button[type="button"] {
+  background: #dc3545;
+  color: white;
+}
