@@ -1,0 +1,56 @@
+.services-container {
+  text-align: center;
+  padding: 40px;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr)); /* Three columns with a minimum width */
+  gap: 30px; /* More spacing between items */
+  justify-content: center;
+  max-width: 1200px; /* Ensures content doesn't stretch too wide */
+  margin: 0 auto; /* Centers the grid */
+}
+
+.service-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: scale(1.05); /* Slight hover effect */
+}
+
+.service-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.service-card h3 {
+  color: #007bff;
+  margin-top: 15px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* Responsive: Adjust columns based on screen size */
+@media (max-width: 1100px) {
+  .services-list {
+      grid-template-columns: repeat(2, minmax(250px, 1fr)); /* Two columns for medium screens */
+  }
+}
+
+@media (max-width: 700px) {
+  .services-list {
+      grid-template-columns: repeat(1, minmax(250px, 1fr)); /* One column for smaller screens */
+  }
+}
