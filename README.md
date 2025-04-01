@@ -23,12 +23,10 @@ npm install
 ```
 
 ### 2️⃣ Set Up Environment Variables
-Create a `.env` file in the **backend** directory and add:
-```
+
+MONGO_URI=mongodb+srv://johnray_raf:johnrayraf123@cluster0.ocdjm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+JWT_SECRET=your_jwt_secret
 PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-```
 
 ### 3️⃣ Run the Backend Server
 ```sh
