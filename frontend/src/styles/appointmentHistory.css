@@ -1,0 +1,79 @@
+.appointment-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  background: linear-gradient(to right, #f3f9ff, #ffffff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.appointment-history h2 {
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.booking-card {
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 15px;
+}
+
+.booking-card p {
+  font-size: 14px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.booking-card strong {
+  display: inline-block;
+  width: 120px;
+  color: #444;
+}
+
+.no-booking {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.book-now-btn {
+  padding: 8px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.book-now-btn:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.booking-card .status {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.booking-card .status.pending {
+  color: orange;
+}
+
+.booking-card .status.completed {
+  color: green;
+}
+
+.booking-card .status.cancelled {
+  color: red;
+}

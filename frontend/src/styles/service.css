@@ -1,0 +1,159 @@
+.services-container {
+  text-align: center;
+  padding: 30px 15px; /* Reduced padding */
+  background-color: #fefefe;
+}
+
+.services-container h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px; /* Slightly less space */
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); /* Slightly tighter grid */
+  gap: 20px;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 18px; /* Reduced padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(14px, 1vw, 16px);
+  height: auto; /* Removed fixed height */
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  font-size: clamp(17px, 2vw, 20px);
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: #555;
+  font-size: clamp(13px, 1vw, 15px);
+  margin-bottom: 8px;
+}
+
+.service-card button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px; /* Slimmer buttons */
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.service-card button:hover {
+  background-color: #218838;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Booking Modal Adjustments */
+.booking-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.booking-form {
+  background: #fff;
+  padding: 20px; /* Reduced form padding */
+  border-radius: 8px;
+  width: 90%;
+  max-width: 450px;
+  max-height: 80vh; /* Reduced modal height */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.booking-form h3 {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+
+.booking-form label {
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 6px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.form-buttons button {
+  padding: 6px 12px;
+  border: none;
+  font-size: 13px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-buttons button[type="submit"] {
+  background: #28a745;
+  color: white;
+}
+
+.form-buttons button[type="button"] {
+  background: #dc3545;
+  color: white;
+}
+
+/* Scrollbar Styling */
+.booking-form::-webkit-scrollbar {
+  width: 6px;
+}
+.booking-form::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.booking-form::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}

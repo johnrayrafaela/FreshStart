@@ -1,0 +1,107 @@
+/* Profile container */
+.profile-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 15px;
+    background: linear-gradient(to right, #f3f9ff, #ffffff);
+    overflow-x: auto; /* Make the container scrollable horizontally */
+  }
+  
+  /* Container for all employees */
+  .employees-container {
+    max-width: 1100px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Employee title */
+  .employees-container h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Employee cards grid */
+  .employees-list {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping of cards */
+  }
+  
+  /* Individual employee card */
+  .profile-card {
+    padding: 20px; /* Adjusted padding */
+    width: 300px; /* Adjust card width */
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    flex-shrink: 0; /* Prevent the cards from shrinking */
+  }
+  
+  /* Header with avatar + name */
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  /* Profile image */
+  .employee-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #007bff;
+  }
+  
+  /* Name */
+  .profile-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #007bff;
+  }
+  
+  /* Employee info */
+  .profile-info {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .profile-info p {
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .profile-info strong {
+    width: 100px;
+    display: inline-block;
+  }
+  
+  /* Availability status */
+  .availability-status {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .availability-status.available {
+    color: #28a745;
+  }
+  
+  .availability-status.not-available {
+    color: #dc3545;
+  }
+  
+  .availability-status span {
+    padding: 4px 8px;
+    border-radius: 6px;
+    background-color: rgba(0, 123, 255, 0.08);
+  }
+  

@@ -1,0 +1,131 @@
+/* General container for the page */
+.profile-container {
+  display: flex;
+  justify-content: space-between; /* Align profile card and appointment history */
+  padding: 50px 20px;
+  background: linear-gradient(to right, #f3f9ff, #ffffff);
+  gap: 30px;
+}
+
+/* Profile card */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px; /* Adjust card width */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 50px; /* Add spacing between cards */
+  padding: 20px;
+}
+
+/* Profile card header */
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Avatar styling */
+.profile-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid #007bff;
+}
+
+/* Profile name styling */
+.profile-card h2 {
+  margin: 0;
+  color: #007bff;
+  font-size: 20px;
+}
+
+/* Profile info paragraph styling */
+.profile-info p {
+  font-size: 15px;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Profile info label (strong) styling */
+.profile-info strong {
+  display: inline-block;
+  width: 140px;
+  color: #444;
+}
+
+/* Admin button styling */
+.admin-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Profile picture section */
+.profile-picture-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Profile image styling */
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 2px solid #007bff;
+}
+
+/* Appointment history container */
+.appointment-history-container {
+  flex: 1;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-height: 400px; /* Set max height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Appointment history page styles */
+.appointment-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Ensure responsive behavior */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column; /* Stack profile and appointment history vertically on smaller screens */
+    align-items: center;
+  }
+
+  .profile-card {
+    max-width: 100%;
+  }
+
+  .appointment-history-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

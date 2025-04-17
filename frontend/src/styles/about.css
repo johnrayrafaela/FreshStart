@@ -1,0 +1,145 @@
+/* about.css */
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f9fc;
+    color: #333;
+    line-height: 1.8;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease;
+  }
+  
+  /* About Container */
+  .about-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* About Section */
+  .about-section {
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+    margin: 30px auto;
+    background: linear-gradient(135deg, #eaf7ff, #d4f1ff);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .about-section h1 {
+    font-size: 2.5rem;
+    color: #0056b3;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .about-content p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+    text-align: left;
+    margin: 0;
+  }
+  
+  /* Dark Mode Styles */
+  body.dark-mode, 
+  .about-container.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  .dark-mode .about-section {
+    background: linear-gradient(135deg, #1a2a3a, #0f1a23);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dark-mode .about-section h1 {
+    color: #4da6ff;
+  }
+  
+  .dark-mode .about-content p {
+    color: #e0e0e0;
+  }
+  
+  /* Toggle Button */
+  .toggle-mode-btn {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .toggle-mode-btn:hover {
+    background-color: #003d82;
+    transform: scale(1.05);
+  }
+  
+  .dark-mode .toggle-mode-btn {
+    background-color: #4da6ff;
+    color: #121212;
+  }
+  
+  .dark-mode .toggle-mode-btn:hover {
+    background-color: #0077e6;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .about-section {
+      padding: 30px 20px;
+    }
+    
+    .about-section h1 {
+      font-size: 2rem;
+    }
+    
+    .about-content p {
+      font-size: 1rem;
+    }
+    
+    .toggle-mode-btn {
+      padding: 10px 15px;
+      font-size: 14px;
+      bottom: 20px;
+      left: 20px;
+    }
+  }
